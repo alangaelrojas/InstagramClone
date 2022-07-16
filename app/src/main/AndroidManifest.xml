@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.instagramclone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.apps.instagramclone.Home.HomeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.apps.instagramclone.Likes.LikesActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.apps.instagramclone.Profile.ProfileActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.apps.instagramclone.Share.ShareActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.apps.instagramclone.Share.NextActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.apps.instagramclone.Login.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.apps.instagramclone.Profile.AccountSettingsActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.apps.instagramclone.Login.RegisterActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.apps.instagramclone.opengl.OpenGLES10Activity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.instagramclone.opengl.NewStoryActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.instagramclone.Search.SearchActivity"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustNothing">
+
+        </activity>
+        <activity
+            android:name="com.apps.instagramclone.materialcamera.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.instagramclone.materialcamera.CaptureActivity2"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
